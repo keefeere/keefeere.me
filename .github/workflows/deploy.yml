@@ -41,6 +41,7 @@ jobs:
       - name: Deploy using SCP and sudo
         run: |
           tar -czf site.tar.gz -C public .
+          ssh -i ~/.ssh/id_rsa -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "sudo rm -rf ${{ secrets.SSH_TARGET_DIR }}/*"
           scp -O -i ~/.ssh/id_rsa -P ${{ secrets.SSH_PORT }} site.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:site.tar.gz
           ssh -i ~/.ssh/id_rsa -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "sudo tar -xzf /volume1/homes/${{ secrets.SSH_USER }}/site.tar.gz -C ${{ secrets.SSH_TARGET_DIR }} && rm /volume1/homes/${{ secrets.SSH_USER }}/site.tar.gz"
 
