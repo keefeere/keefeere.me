@@ -18,11 +18,14 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
+      - name: Install markdownlint-cli
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y npm
+          sudo npm install -g markdownlint-cli
 
       - name: Lint Markdown (optional)
-        run: |
-          sudo apt-get install -y markdownlint-cli
-          markdownlint content/
+        run: markdownlint "content/**/*.md"
 
       - name: Build Hugo Site
         run: hugo --minify
