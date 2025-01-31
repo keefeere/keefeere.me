@@ -42,5 +42,5 @@ jobs:
         run: |
           tar -czf site.tar.gz -C public .
           ls -lha
-          scp -P 22822 site.tar.gz keefeere@ssh.keefeere.me:site.tar.gz
+          scp -P 22822 -i ~/.ssh/id_rsa site.tar.gz keefeere@ssh.keefeere.me:site.tar.gz
           
