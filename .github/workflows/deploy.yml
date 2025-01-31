@@ -18,14 +18,14 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
-      - name: Install markdownlint-cli
+      - name: Install Markdown Linter (mdl)
         run: |
           sudo apt-get update
-          sudo apt-get install -y npm
-          sudo npm install -g markdownlint-cli
+          sudo apt-get install -y ruby ruby-dev
+          sudo gem install mdl
 
       - name: Lint Markdown (optional)
-        run: markdownlint "content/**/*.md"
+        run: mdl content/
 
       - name: Build Hugo Site
         run: hugo --minify
