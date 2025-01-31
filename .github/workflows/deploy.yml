@@ -39,9 +39,7 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -p ${{ secrets.SSH_PORT }} -H "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts
 
-      - name: Deploy to Server
-        run: |
-                - name: Deploy using SCP and sudo
+      - name: Deploy using SCP and sudo
         run: |
           tar -czf site.tar.gz -C public .
           scp -P ${{ secrets.SSH_PORT }} site.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/volume1/homes/${{ secrets.SSH_USER }}/site.tar.gz
