@@ -39,4 +39,5 @@ jobs:
 
       - name: Deploy to Server
         run: |
-          rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" --delete public/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.SSH_TARGET_DIR }}
+          rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" --delete public/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/tmp/hugo-site
+          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "sudo mv /tmp/hugo-site/* ${{ secrets.SSH_TARGET_DIR }} && sudo chown -R root:root ${{ secrets.SSH_TARGET_DIR }}"
