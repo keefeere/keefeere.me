@@ -9,17 +9,34 @@ description: "Short info about me"
 
 ## **Who am i?**  
 
-Experienced **DevOps Engineer** with a strong background in system administration, automation, and cloud infrastructure. Over **15 years of IT experience**, including leadership roles as **CIO** and extensive hands-on expertise in **CI/CD, Kubernetes, Infrastructure as Code (IaC), and observability**.  
+Experienced **DevOps Engineer** with a strong background in system administration,
+automation, and cloud infrastructure. Over **15 years of IT experience**, including
+leadership roles as **CIO** and extensive hands-on expertise in **CI/CD, Kubernetes,
+Infrastructure as Code (IaC), and observability**.  
 
-Proficient in designing and implementing **GitOps-driven deployment pipelines** using **GitLab CI, ArgoCD, and FluxCD**, enabling seamless application delivery. Skilled in **container orchestration** with **Docker, Kubernetes, and Cri-O**, as well as managing scalable cloud environments on **AWS (EC2, S3, ECS, EKS)**.  
+Proficient in designing and implementing **GitOps-driven deployment pipelines** using
+**GitLab CI, ArgoCD, and FluxCD**, enabling seamless application delivery. Skilled
+in **container orchestration** with **Docker, Kubernetes, and Cri-O**, as well as
+managing scalable cloud environments on **AWS (EC2, S3, ECS, EKS)**.  
 
-Strong expertise in **monitoring and observability**, utilizing **Prometheus, Grafana, Zabbix, and the ELK stack (Elasticsearch, Fluent Bit, Kibana)** for system insights and troubleshooting. Extensive experience in **database administration** for **MySQL, MariaDB, PostgreSQL**, including high-availability configurations with **Patroni and ProxySQL**.  
+Strong expertise in **monitoring and observability**, utilizing **Prometheus,
+Grafana, Zabbix, and the ELK stack (Elasticsearch, Fluent Bit, Kibana)** for system
+insights and troubleshooting. Extensive experience in **database administration**
+for **MySQL, MariaDB, PostgreSQL**, including high-availability configurations
+with **Patroni and ProxySQL**.  
 
-Capable of managing **large-scale Linux and Windows infrastructures**, with experience in **VMware ESXi, Proxmox, Hyper-V**, and **network security solutions** like **WireGuard VPN, Cisco ASA, and Fortinet**. Adept at **scripting and automation** using **Python, Bash, and PowerShell**, enhancing operational efficiency.  
+Capable of managing **large-scale Linux and Windows infrastructures**, with experience
+in **VMware ESXi, Proxmox, Hyper-V**, and **network security solutions** like **WireGuard
+VPN, Cisco ASA, and Fortinet**. Adept at **scripting and automation** using **Python,
+Bash, and PowerShell**, enhancing operational efficiency.  
 
-Proven track record of **leading DevOps transformations**, optimizing infrastructure for startups and enterprises, and ensuring **high availability, security, and scalability**. Passionate about automation, infrastructure optimization, and continuous improvement.  
+Proven track record of **leading DevOps transformations**, optimizing infrastructure
+for startups and enterprises, and ensuring **high availability, security,
+and scalability**. Passionate about automation, infrastructure optimization,
+and continuous improvement.  
 
 ## EDUCATION
+
 **HIGHT SCOOL**  
 1998 – 2004  
 *Odesa National University* - Master of Science - Computer Networks and Systems
@@ -56,7 +73,6 @@ Nov 2023 - Dec 2024
     module, with improvements accepted and merged into the
     main project.
 
-
 **Linux\Windows Administrator** - NDA (Startup in gamin AI Sphere)  
 Jul 2021 – Nov 2023
 
@@ -83,13 +99,12 @@ Jul 2021 – Nov 2023
     **PostgreSQL** databases: performed installation, tuning,
     backups, and performance optimization.
 
+### PREVIOS WORK EXPERIENCE
 
-#### PREVIOS WORK EXPERIENCE
 2016-2023 - *TechnoYug* – CIO  
 2015-2016 - *Kraina Igrashok* – CIO  
 2014-2015 - *Adept Group* – CIO  
 2006-2014 - *Kritex-Service* – SysAdmin, CIO  
-
 
 ---
 ## SKILLS
@@ -98,12 +113,14 @@ Jul 2021 – Nov 2023
 **LB:** Traefik, nginx, HAProxy, Kong Gateway, Istio  
 **Containers** : Docker, Cri-O, Docker Swarm, Kubernetes, k8s, Docker-compose  
 **Clouds** : Amazon Web Services, AWS (EC2, S3, ECS EKS etc)  
-**Programming, scripting** : Python, PHP, Delphi, bash and PowerShell scripting  
+**Programming, scripting** : Python, PHP, Delphi, bash and
+PowerShell scripting  
 **VMs:** VMware ESXi, VMware vSan, Proxmox, LXC, Microsoft HyperV  
 **Monitoring** : Zabbix, Prometheus and Grafana, ELK, Fluent-Bit  
 **DB:** MySQL, MariaDB, Postgres, ProxySQL, Patroni  
 **Operating Systems** : Linux, Windows  
-**Collaboration:** Jira, Confluence, Youtrack, WikiJS, Trello, Git, GitHub, GitLab, Slack  
+**Collaboration:** Jira, Confluence, Youtrack, WikiJS, Trello,
+Git, GitHub, GitLab, Slack  
 
 ---
 ## CONTACT
@@ -119,5 +136,3 @@ Jul 2021 – Nov 2023
 ---
 ### LANGUAGES  
 English (B 1 - 2 ), Ukrainian (native), Russian (native)
-
-
