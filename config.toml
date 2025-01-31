@@ -1,0 +1,86 @@
+baseURL = 'http://keefeere.me/'
+languageCode = 'en-us'
+title = 'KeeFeeRe'
+theme = "hugo-theme-m10c"
+
+[mediaTypes]
+  [mediaTypes."text/css"]
+    suffixes = ["css"]
+
+[pagination]
+  pagerSize = 8
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "work"
+    name = "Experience"
+    url = "/#EXPERIENCE"
+    weight = 2  
+  [[menu.main]]
+    identifier = "skills"
+    name = "Skills"
+    url = "/#SKILLS"
+    weight = 3  
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/#CONTACT"
+    weight = 4
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 5
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 6
+ 
+
+[params]
+  author = "KeeFeeRe"
+  description = "DevOps Engineer | CI/CD | Kubernetes | Cloud Infrastructure | Automation | Observability 🚀"
+  avatar = "avatar.jpg" 
+  menu_item_separator = " - "  
+  favicon = "/favicon.ico"
+  mainSections = [] 
+
+  [[params.social]]
+    icon = "brand-github"
+    name = "Github"
+    url = "https://github.com/keefeere"
+  [[params.social]]
+    icon = "brand-linkedin"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/chechulinserhii"
+  [[params.social]]
+    icon = "brand-django"
+    name = "Djinni"
+    url = "https://djinni.co/q/fc56f1e5aa"
+  [[params.social]]
+    icon = "brand-facebook"
+    name = "Facebook"
+    url = "https://www.facebook.com/k33f33r3"
+   [[params.social]]
+    icon = "brand-instagram"
+    name = "Instagramm"
+    url = "https://www.instagram.com/k33f33r3/"  
+  [[params.social]]
+    icon = "brand-gmail"
+    name = "Mail"
+     url = "mailto:cheseral@gmail.com"
+
+[params.style]
+  darkestColor = "#0F210F"
+  darkColor = "#050805"
+  lightColor = "#F4FFEF"
+  lightestColor = "#ECFFB3"
+  primaryColor = "#A4DA62"
+  
+
