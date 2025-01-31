@@ -43,4 +43,4 @@ jobs:
         run: |
           tar -czf site.tar.gz -C public .
           scp -P ${{ secrets.SSH_PORT }} site.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/volume1/homes/keefeere/site.tar.gz
-          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "sudo tar -xzf /volume1/homes/${{ secrets.SSH_USER }}/site.tar.gz -C ${{ secrets.SSH_TARGET_DIR }} && rm /home/${{ secrets.SSH_USER }}/site.tar.gz"
+          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "sudo tar -xzf /volume1/homes/keefeere/site.tar.gz -C ${{ secrets.SSH_TARGET_DIR }} && rm /home/${{ secrets.SSH_USER }}/site.tar.gz"
