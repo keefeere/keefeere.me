@@ -127,7 +127,7 @@ Jul 2021 – Nov 2023
 
 ---
 ## SKILLS
-**CI\CD:** GitLab CI, ArgoCD, FluxCD,  GitHub Actions, Jenkins
+**CI\CD:** GitLab CI, ArgoCD, FluxCD,  GitHub Actions, Jenkins  
 **IaC:** Terraform, Teragrunt, Hashicorp Vault, Ansible, molecula  
 **LB:** AWS ALB, Traefik, nginx, HAProxy, Kong Gateway, Istio
 **Containers** : Docker, Cri-O, Docker Swarm, Kubernetes, k8s, Docker-compose  
