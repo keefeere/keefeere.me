@@ -49,6 +49,25 @@ and continuous improvement.
 
 ## EXPERIENCE
 
+**Site Reliability Engineer** - NuxGame  
+Mar 2025 – May 2025
+
+- Reviewed existing APM setup and provided recommendations for
+  improved monitoring coverage and alerting.
+- Integrated Falco runtime security with Wazuh SIEM
+  for enhanced container-level threat detection.
+- Updated and maintained a self-hosted Sentry
+  instance for improved application error tracking.
+- Instrumented Kubernetes clusters with NewRelic
+  for real-time monitoring and observability.
+- Implemented secret scanning using TruffleHog to strengthen security posture.
+- Contributed to automation via Ansible roles for
+  SSH key management and Wazuh agent deployment.
+- Worked within a complex hybrid cloud environment: AWS (EKS, EC2, Aurora,
+  S3, Route53, etc.), Hetzner (bare metal, K8s dev clusters), Cloudflare
+- Used diverse IaC and CI/CD tools, including Terraform, Cluster.dev, FluxCD,
+  Jenkins, and GitLab Actions.
+
 **DevOps Engeeneer** - Dataweb Global  
 Nov 2023 - Dec 2024  
 
