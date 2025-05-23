@@ -127,19 +127,20 @@ Jul 2021 – Nov 2023
 
 ---
 ## SKILLS
-**CI\CD:** GitLab CI, ArgoCD, FluxCD, GitHub Actions  
+**CI\CD:** GitLab CI, ArgoCD, FluxCD,  GitHub Actions, Jenkins
 **IaC:** Terraform, Teragrunt, Hashicorp Vault, Ansible, molecula  
-**LB:** Traefik, nginx, HAProxy, Kong Gateway, Istio  
+**LB:** AWS ALB, Traefik, nginx, HAProxy, Kong Gateway, Istio
 **Containers** : Docker, Cri-O, Docker Swarm, Kubernetes, k8s, Docker-compose  
 **Clouds** : Amazon Web Services, AWS (EC2, S3, ECS EKS etc)  
 **Programming, scripting** : Python, PHP, Delphi, bash and
 PowerShell scripting  
 **VMs:** VMware ESXi, VMware vSan, Proxmox, LXC, Microsoft HyperV  
-**Monitoring** : Zabbix, Prometheus and Grafana, ELK, Fluent-Bit  
-**DB:** MySQL, MariaDB, Postgres, ProxySQL, Patroni  
+**Monitoring** : Zabbix, Prometheus and Grafana, ELK, Fluent-Bit, NewRelic, LGTM
+Stack  
+**DB:** AWS Aurora, RDS, MySQL, MariaDB, Postgres, ProxySQL, Patroni
 **Operating Systems** : Linux, Windows  
 **Collaboration:** Jira, Confluence, Youtrack, WikiJS, Trello,
-Git, GitHub, GitLab, Slack  
+Git, GitHub, GitLab, Slack, ClickUp
 
 ---
 ## CONTACT
