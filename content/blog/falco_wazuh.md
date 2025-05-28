@@ -214,32 +214,33 @@ Create or edit `/var/ossec/etc/rules/falco_rules.xml`:
 
 ```xml
 <group name="falco">
-
-  <rule id="69000" level="0" noalert="1">
+  <!-- Rule IDs in Wazuh should be in the 100000–120000 range, according to the documentation:
+  https://documentation.wazuh.com/current/user-manual/ruleset/rules/custom.html -->
+  <rule id="109000" level="0" noalert="1">
     <decoded_as>falco</decoded_as>
     <description>Grouping for the Falco rules.</description>
   </rule>
 
-  <rule id="69001" level="3">
-    <if_sid>69000</if_sid>
+  <rule id="109001" level="3">
+    <if_sid>109000</if_sid>
     <field name="priority">Notice|Info|Debug</field>
     <description>Falco informational messages.</description>
   </rule>
 
-  <rule id="69002" level="4">
-    <if_sid>69000</if_sid>
+  <rule id="109002" level="4">
+    <if_sid>109000</if_sid>
     <field name="priority">Warning</field>
     <description>Falco warning messages.</description>
   </rule>
 
-  <rule id="69003" level="6">
-    <if_sid>69000</if_sid>
+  <rule id="109003" level="6">
+    <if_sid>109000</if_sid>
     <field name="priority">Error</field>
     <description>Falco error messages.</description>
   </rule>
 
-  <rule id="69004" level="12">
-    <if_sid>69000</if_sid>
+  <rule id="109004" level="12">
+    <if_sid>109000</if_sid>
     <field name="priority">Critical|Emergency|Alert</field>
     <description>Falco critical alerts.</description>
   </rule>
