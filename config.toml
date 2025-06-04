@@ -1,4 +1,4 @@
-baseURL = 'http://keefeere.me/'
+baseURL = 'https://keefeere.me/'
 languageCode = 'en-us'
 title = 'KeeFeeRe'
 theme = "hugo-theme-m10c"
