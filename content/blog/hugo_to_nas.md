@@ -6,8 +6,6 @@ description: "Guide to setup CI/CD in GitHub for Synology NAS"
 tags: ["Hugo", "Blog", "Static Site", "GitHub", "DevOps", "Synology"]
 ---
 
-# How to Make CI/CD for your static Hugo site and deploy it to your Synology NAS
-
 Setting up a CI/CD pipeline for your static Hugo site and deploying it to a Synology
 NAS requires several steps, from creating an SSH key to configuring GitHub Actions
 for automated deployment. This guide covers all the necessary details, including

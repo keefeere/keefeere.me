@@ -6,10 +6,6 @@ to Wazuh"
 tags: ["Falco", "Wazuh", "syslog"]
 ---
 
-# How to setup Falco and Wazuh integration
-
-## Overview
-
 This guide describes how to integrate [Falco](https://falco.org/) with
 [Wazuh](https://wazuh.com/) using `syslog` as a transport mechanism.
 The logs are collected from a Kubernetes cluster where Falco is deployed via

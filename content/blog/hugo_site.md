@@ -6,8 +6,6 @@ blog using Hugo and deploying it via GitHub Pages."
 tags: ["Hugo", "Blog", "Static Site", "GitHub Pages", "DevOps"]
 ---
 
-# Introduction
-
 Hugo is a fast and flexible static site generator that is perfect
 for creating blogs. This guide will walk you through setting up a
 Hugo-based blog and deploying it to GitHub Pages with CI/CD automation.

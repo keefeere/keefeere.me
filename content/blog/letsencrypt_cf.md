@@ -6,8 +6,6 @@ the DNS-01 challenge with Cloudflare DNS on Synology NAS."
 tags: ["Let's Encrypt", "Cloudflare", "DNS Challenge", "SSL", "acme.sh", "Synology"]
 ---
 
-# Setting Up Let's Encrypt with DNS Challenge Using Cloudflare on Synology
-
 Securing your Synology NAS with SSL/TLS certificates is essential. Since
 Synology's built-in Let's Encrypt support does not support wildcard
 certificates, we can use the `acme.sh` script with Cloudflare's DNS
