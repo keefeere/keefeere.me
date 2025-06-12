@@ -1,0 +1,1 @@
+{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\Q🏠 Romania, Brasov 📧 📧 📱 +380 (95) 279 1125 📱 +4 (074) 149 75 36 🌐 LinkedIn 🌐 GitHub\\E$"}
