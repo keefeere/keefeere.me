@@ -148,8 +148,8 @@ Git, GitHub, GitLab, Slack, ClickUp
 ## CONTACT
 
 🏠 Romania, Brasov  
-📧<me@keefeere.me>  
-📧<cheseral@gmail.com>  
+📧 <me@keefeere.me>  
+📧 <cheseral@gmail.com>  
 📱 +380 (95) 279 1125  
 📱 +4 (074) 149 75 36  
 🌐 [LinkedIn](https://www.linkedin.com/in/chechulinserhii)  
