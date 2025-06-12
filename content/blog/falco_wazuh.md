@@ -1,5 +1,5 @@
 ---
-title: "How to setup Falco and Wazuh integration"
+title: "How to set Falco and Wazuh integration"
 date: "2025-05-10"
 description: "Guide to setup k8s cluster monitoring with Falco and send alerts
 to Wazuh"
@@ -256,9 +256,9 @@ systemctl restart wazuh-manager
 
 1) Generate a Falco event (e.g. create a file in a restricted directory):
 
-```bash
-touch /bin/testfile
-```
+   ```bash
+   touch /bin/testfile
+   ```
 
 2) Verify it appears in `/var/log/falco.log`
 3) Check Wazuh alerts via `/var/ossec/logs/alerts/alerts.json` or Wazuh UI

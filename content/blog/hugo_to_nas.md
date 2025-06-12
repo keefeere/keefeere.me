@@ -9,12 +9,12 @@ tags: ["Hugo", "Blog", "Static Site", "GitHub", "DevOps", "Synology"]
 Setting up a CI/CD pipeline for your static Hugo site and deploying it to a Synology
 NAS requires several steps, from creating an SSH key to configuring GitHub Actions
 for automated deployment. This guide covers all the necessary details, including
-handling SSH permissions, WebStation setup on Synology NAS, and setting up Let's
+handling SSH permissions, Web Station setup on Synology NAS, and setting up Let's
 Encrypt SSL with DNS challenge on Cloudflare.
 
 ## Prerequisites
 
-- A Synology NAS with WebStation installed.
+- A Synology NAS with Web Station installed.
 - A GitHub repository containing your Hugo site.
 - A domain name and an SSL certificate (Let's Encrypt recommended).
 - A Cloudflare account for managing DNS records.
@@ -75,9 +75,9 @@ Test the connection:
 ssh -p <your-port> <user>@<nas-ip>
 ```
 
-## Step 3: Configure WebStation on Synology NAS
+## Step 3: Configure Web Station on Synology NAS
 
-1) Install **WebStation** from Synology Package Center.
+1) Install **Web Station** from Synology Package Center.
 2) Set up a virtual host pointing to `/volume1/web/mysite`.
 3) Ensure permissions allow web access (use `sudo` if necessary to modify files).
 
@@ -152,7 +152,7 @@ To make your site accessible via a domain:
 
 1) Purchase a domain and point it to your NAS IP.
 2) Use **Let's Encrypt** for an SSL certificate in **Control Panel > Security > Certificate**.
-3) Apply the certificate to WebStation.
+3) Apply the certificate to Web Station.
 
 ### Automating SSL Renewal with `acme.sh`
 
@@ -199,7 +199,7 @@ create a scheduled task in Synology Task Scheduler:
 
 For detailed domain setup, refer to:
 
-- [Synology WebStation Documentation](https://kb.synology.com/en-global/WebStation)
+- [Synology Web Station Documentation](https://kb.synology.com/en-global/WebStation)
 - [Let's Encrypt Guide](https://letsencrypt.org/getting-started/)
 
 ## Conclusion

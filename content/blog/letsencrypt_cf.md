@@ -90,7 +90,7 @@ Once issued, deploy the certificate in Synology DSM:
 acme.sh deploy -d 'example.com' --deploy-hook synology_dsm
 ```
 
-This deploy your certificate in Synology NAS.
+This deploys your certificate in Synology NAS.
 
 ## Step 7: Automate Certificate Renewal Using Synology Task Scheduler
 
