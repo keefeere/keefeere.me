@@ -37,3 +37,5 @@ WikiJS
 rsyslog
 Falcosidekick
 logrotate
+Giscus
+noborder
