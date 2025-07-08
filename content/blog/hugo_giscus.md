@@ -11,7 +11,6 @@ GitHub-powered comments, `Giscus` is a great privacy-respecting and lightweight
 option. This guide shows how to integrate it properly — including Hugo
 overrides, theming, and comment moderation.
 
----
 
 ## What is Giscus
 
@@ -24,15 +23,11 @@ thread. Benefits:
 - Comments are stored in your GitHub repo
 - Supports dark/light themes
 
----
-
 ## Prerequisites
 
 - A Hugo blog (e.g. using `m10c` theme)
 - Your content is versioned on GitHub
 - Discussions enabled on your GitHub repo
-
----
 
 ## Step 1 — Enable GitHub Discussions
 
