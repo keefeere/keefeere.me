@@ -11,7 +11,6 @@ GitHub-powered comments, `Giscus` is a great privacy-respecting and lightweight
 option. This guide shows how to integrate it properly — including Hugo
 overrides, theming, and comment moderation.
 
-
 ## What is Giscus
 
 [Giscus](https://giscus.app) is a comment system powered by GitHub Discussions.
