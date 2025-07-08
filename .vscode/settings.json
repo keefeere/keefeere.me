@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/aerleon/aerleon/main/schemas/aerleon-policies.schema.json": "file:///Users/schechu/Repos/_home/keefeere.me/static/admin/config.yml"
+    }
+}
