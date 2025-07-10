@@ -43,7 +43,7 @@ and continuous improvement.
 2022 - *DevOps01* - courses  
 2021 - *Web Academy* - DevOps for Sysadmins
 
----
+___
 
 ## EXPERIENCE
 
@@ -121,6 +121,8 @@ Jul 2021 – Nov 2023
 2015-2016 - *Kraina Igrashok* – CIO  
 2014-2015 - *Adept Group* – CIO  
 2006-2014 - *Kritex-Service* – Sysadmin, CIO  
+
+___
 
 ## SKILLS
 

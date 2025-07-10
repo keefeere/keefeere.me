@@ -1,2 +1,2 @@
 # .mdlrc
-rules "~MD002", "~MD041"
+rules "~MD002", "~MD041", "~MD035"

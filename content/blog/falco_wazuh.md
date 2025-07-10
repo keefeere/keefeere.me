@@ -1,8 +1,9 @@
 ---
 title: "How to set Falco and Wazuh integration"
 date: "2025-05-10"
-description: "Guide to setup k8s cluster monitoring with Falco and send alerts
-to Wazuh"
+description: >
+  Guide to setup k8s cluster monitoring with Falco and
+  send alerts to Wazuh
 tags: ["Falco", "Wazuh", "syslog"]
 ---
 
@@ -54,7 +55,7 @@ rules to generate alerts.
 * Wazuh manager with access to the log file and custom decoders/rules enabled
 * UDP port 10514 open and reachable from Kubernetes nodes
 
----
+___
 
 ## Step 1: Deploy Falco with Falcosidekick
 
@@ -119,7 +120,7 @@ helm upgrade --install falco falcosecurity/falco \
   -f values-falco.yml
 ```
 
----
+___
 
 ## Step 2: Configure rsyslog
 
@@ -149,7 +150,7 @@ Restart `rsyslog` to apply:
 systemctl restart rsyslog
 ```
 
----
+___
 
 ## Step 3: Setup logrotate
 
@@ -169,7 +170,7 @@ Add a logrotate policy in `/etc/logrotate.d/falco`:
 }
 ```
 
----
+___
 
 ## Step 4: Wazuh Configuration
 
@@ -250,7 +251,7 @@ Restart the Wazuh manager:
 systemctl restart wazuh-manager
 ```
 
----
+___
 
 ## Step 5: Testing & Verification
 
@@ -263,7 +264,7 @@ systemctl restart wazuh-manager
 2) Verify it appears in `/var/log/falco.log`
 3) Check Wazuh alerts via `/var/ossec/logs/alerts/alerts.json` or Wazuh UI
 
----
+___
 
 ## Conclusion
 
