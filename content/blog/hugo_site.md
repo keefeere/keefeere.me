@@ -1,8 +1,9 @@
 ---
 title: "How to Set Up Your Blog with Hugo and GitHub Pages"
 date: "2025-01-30"
-description: "A step-by-step guide to creating a static
-blog using Hugo and deploying it via GitHub Pages."
+description: >
+  A step-by-step guide to creating a static
+  blog using Hugo and deploying it via GitHub Pages.
 tags: ["Hugo", "Blog", "Static Site", "GitHub Pages", "DevOps"]
 ---
 
@@ -18,6 +19,8 @@ Before you start, ensure you have the following installed:
 * [Hugo](https://gohugo.io/getting-started/installing/)
 * [Git](https://git-scm.com/downloads)
 * A GitHub account
+
+___
 
 ## Step 1: Create a New Hugo Site
 

@@ -1,8 +1,9 @@
 ---
 title: "Setting Up Let's Encrypt with DNS Challenge Using Cloudflare on Synology"
 date: 2025-03-21
-description: "A step-by-step guide to obtaining Let's Encrypt certificates using
-the DNS-01 challenge with Cloudflare DNS on Synology NAS."
+description: >
+   A step-by-step guide to obtaining Let's Encrypt certificates using
+   the DNS-01 challenge with Cloudflare DNS on Synology NAS.
 tags: ["Let's Encrypt", "Cloudflare", "DNS Challenge", "SSL", "acme.sh", "Synology"]
 ---
 
