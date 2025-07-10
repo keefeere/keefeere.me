@@ -9,41 +9,41 @@ media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
-    create: true
-    slug: "{{slug}}"
-    extension: "md"
-    format: "yaml"
+- name: "blog"
+  label: "Blog"
+  folder: "content/blog"
+  create: true
+  slug: "{{slug}}"
+  extension: "md"
+  #format: "yaml"
+  fields:
+  - label: "Title"
+    name: "title"
+    widget: "string"
+  - label: "Date"
+    name: "date"
+    widget: "datetime"
+  - label: "Description"
+    name: "description"
+    widget: "text"
+    required: false
+  - label: "Tags"
+    name: "tags"
+    widget: "list"
+    required: false
+  - label: "Body"
+    name: "body"
+    widget: "markdown"
+- name: "pages"
+  label: "Pages"
+  files:
+  - label: "Homepage"
+    name: "homepage"
+    file: "content/_index.md"
     fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Date"
-        name: "date"
-        widget: "datetime"
-      - label: "Description"
-        name: "description"
-        widget: "text"
-        required: false
-      - label: "Tags"
-        name: "tags"
-        widget: "list"
-        required: false
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-  - name: "pages"
-    label: "Pages"
-    files:
-      - label: "Homepage"
-        name: "homepage"
-        file: "content/_index.md"
-        fields:
-          - label: "Title"
-            name: title
-            widget: string
-          - label: "Body"
-            name: body
-            widget: markdown
+    - label: "Title"
+      name: title
+      widget: string
+    - label: "Body"
+      name: body
+      widget: markdown
