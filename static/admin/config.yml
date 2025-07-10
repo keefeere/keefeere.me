@@ -34,3 +34,16 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "content/_index.md"
+        fields:
+          - label: "Title"
+            name: title
+            widget: string
+          - label: "Body"
+            name: body
+            widget: markdown
