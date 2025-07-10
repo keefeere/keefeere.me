@@ -5,8 +5,6 @@ description: "Short info about me"
 
 # Hi! I'm Serhii Chechulin
 
----
-
 ## **Who am I?**  
 
 Experienced **DevOps Engineer** with a strong background in system administration,
@@ -124,8 +122,6 @@ Jul 2021 – Nov 2023
 2014-2015 - *Adept Group* – CIO  
 2006-2014 - *Kritex-Service* – Sysadmin, CIO  
 
----
-
 ## SKILLS
 
 **CI\CD:** GitLab CI, ArgoCD, FluxCD, GitHub Actions, Jenkins  
@@ -143,8 +139,6 @@ Stack
 **Collaboration:** Jira, Confluence, YouTrack, WikiJS, Trello,
 Git, GitHub, GitLab, Slack, ClickUp
 
----
-
 ## CONTACT
 
 🏠 Romania, Brasov  
@@ -154,8 +148,6 @@ Git, GitHub, GitLab, Slack, ClickUp
 📱 +4 (074) 149 75 36  
 🌐 [LinkedIn](https://www.linkedin.com/in/chechulinserhii)  
 🌐 [GitHub](https://github.com/keefeere)
-
----
 
 ### LANGUAGES  
 
