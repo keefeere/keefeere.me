@@ -1,6 +1,7 @@
 ---
-title: "How to Make CI/CD for your static Hugo
-site and deploy it to your Synology NAS"
+title: >
+  How to Make CI/CD for your static Hugo
+  site and deploy it to your Synology NAS
 date: "2025-02-03"
 description: "Guide to setup CI/CD in GitHub for Synology NAS"
 tags: ["Hugo", "Blog", "Static Site", "GitHub", "DevOps", "Synology"]
