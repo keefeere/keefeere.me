@@ -29,13 +29,12 @@ jobs:
       - name: Lint Markdown (optional)
         run: mdl content/
 
+      - name: Clean public dir
+        run: rm -rf public/      
+        
       - name: Build Hugo Site
         run: |
           hugo --minify
- 
-      - name: Clean public dir
-        run: rm -rf public/    
-          
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
