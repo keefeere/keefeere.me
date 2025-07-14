@@ -1,2 +1,3 @@
-# .mdlrc
+all
 rules "~MD002", "~MD041", "~MD035"
+style ".md.style.rb"

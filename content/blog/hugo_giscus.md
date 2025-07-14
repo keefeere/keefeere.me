@@ -30,25 +30,25 @@ thread. Benefits:
 
 ## Step 1 — Enable GitHub Discussions
 
-1) Go to your blog’s GitHub repo.
-2) Navigate to **Settings → Features**.
-3) Enable **Discussions**.
+1. Go to your blog’s GitHub repo.
+2. Navigate to **Settings → Features**.
+3. Enable **Discussions**.
 
 ## Step 2 — Configure Giscus
 
-1) Go to <https://giscus.app>
-2) Click “Sign in with GitHub”
-3) Under “Install the GitHub App”, click “Install”
+1. Go to <https://giscus.app>
+2. Click “Sign in with GitHub”
+3. Under “Install the GitHub App”, click “Install”
    Select your blog repository from the list and grant access
    (This is required so Giscus can read and write Discussions in your repo)
-4) After installing the app:
+4. After installing the app:
    1) Select your repo
    2) Choose the Discussion category (or create one)
    3) Pick your preferred options:
    4) Mapping: pathname or title
    5) Theme: preferred_color_scheme, dark_dimmed, etc.
    6) Enable Reactions, metadata, etc.
-5) Copy the generated `<script>` block.
+5. Copy the generated `<script>` block.
 
 Example:
 

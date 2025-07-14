@@ -23,10 +23,10 @@ Before starting, ensure you have:
 
 ## Step 1: Enable SSH and Connect to Your Synology NAS
 
-1) Log in to your Synology DSM.
-2) Go to **Control Panel** → **Terminal & SNMP**.
-3) Enable **SSH Service** and set the port (default is 22).
-4) Connect to your NAS via SSH:
+1. Log in to your Synology DSM.
+2. Go to **Control Panel** → **Terminal & SNMP**.
+3. Enable **SSH Service** and set the port (default is 22).
+4. Connect to your NAS via SSH:
 
    ```bash
    ssh admin@your-nas-ip
@@ -95,18 +95,18 @@ This deploys your certificate in Synology NAS.
 
 ## Step 7: Automate Certificate Renewal Using Synology Task Scheduler
 
-1) Open **Control Panel** → **Task Scheduler**.
-2) Click **Create** → **Scheduled Task** → **User-defined script**.
-3) Name the task (e.g., `Renew Let's Encrypt Certificate`).
-4) Set the user to `acme`.
-5) Go to the **Schedule** tab and set it to run daily (e.g., every day at 3 AM).
-6) In the **Task Settings** tab, under **Run command**, enter:
+1. Open **Control Panel** → **Task Scheduler**.
+2. Click **Create** → **Scheduled Task** → **User-defined script**.
+3. Name the task (e.g., `Renew Let's Encrypt Certificate`).
+4. Set the user to `acme`.
+5. Go to the **Schedule** tab and set it to run daily (e.g., every day at 3 AM).
+6. In the **Task Settings** tab, under **Run command**, enter:
 
    ```bash
    sh /volume1/homes/user/acme.sh renew -d 'example.com:' --deploy-hook synology_dsm
    ```
 
-7) Click **OK** and enable the task.
+7. Click **OK** and enable the task.
 
 This ensures the certificate is renewed automatically
 and integrated into Synology's system.

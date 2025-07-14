@@ -60,10 +60,10 @@ ssh-keygen -t rsa -b 4096 -C "your-email@example.com"
 
 Copy the contents of `~/.ssh/id_rsa.pub` and add it to your Synology NAS:
 
-1) Log in to your NAS and go to **Control Panel > Terminal & SNMP**.
-2) Enable SSH service.
-3) Place the public key inside `/volume1/homes/<user>/.ssh/authorized_keys`
-and set the correct permissions:
+1. Log in to your NAS and go to **Control Panel > Terminal & SNMP**.
+2. Enable SSH service.
+3. Place the public key inside `/volume1/homes/<user>/.ssh/authorized_keys`
+  and set the correct permissions:
 
    ```sh
    chmod 700 /volume1/homes/<user>/.ssh
@@ -78,9 +78,9 @@ ssh -p <your-port> <user>@<nas-ip>
 
 ## Step 3: Configure Web Station on Synology NAS
 
-1) Install **Web Station** from Synology Package Center.
-2) Set up a virtual host pointing to `/volume1/web/mysite`.
-3) Ensure permissions allow web access (use `sudo` if necessary to modify files).
+1. Install **Web Station** from Synology Package Center.
+2. Set up a virtual host pointing to `/volume1/web/mysite`.
+3. Ensure permissions allow web access (use `sudo` if necessary to modify files).
 
 ## Step 4: Set Up GitHub Actions for CI/CD
 
@@ -144,41 +144,41 @@ jobs:
 
 To make your site accessible via a domain:
 
-1) Purchase a domain and point it to your NAS IP.
-2) Use Let's Encrypt with **DNS challenge** via Cloudflare API.
+1. Purchase a domain and point it to your NAS IP.
+2. Use Let's Encrypt with **DNS challenge** via Cloudflare API.
 
 ## Step 5: Set Up a Domain and SSL Certificate
 
 To make your site accessible via a domain:
 
-1) Purchase a domain and point it to your NAS IP.
-2) Use **Let's Encrypt** for an SSL certificate in **Control Panel > Security > Certificate**.
-3) Apply the certificate to Web Station.
+1. Purchase a domain and point it to your NAS IP.
+2. Use **Let's Encrypt** for an SSL certificate in **Control Panel > Security > Certificate**.
+3. Apply the certificate to Web Station.
 
 ### Automating SSL Renewal with `acme.sh`
 
 If you use Let's Encrypt with a DNS challenge on Cloudflare, set up automatic renewal:
 
-1) Install `acme.sh`:
+1. Install `acme.sh`:
 
    ```sh
    curl https://get.acme.sh | sh
    ```
 
-2) Configure the Cloudflare API key for DNS challenge:
+2. Configure the Cloudflare API key for DNS challenge:
 
    ```sh
    export CF_Key="your-cloudflare-api-key"
    export CF_Email="your-cloudflare-email"
    ```
 
-3) Issue the certificate:
+3. Issue the certificate:
 
    ```sh
    acme.sh --issue --dns dns_cf -d yourdomain.com --keylength ec-256
    ```
 
-4) Deploy the certificate to Synology DSM:
+4. Deploy the certificate to Synology DSM:
 
    ```sh
    acme.sh --deploy -d yourdomain.com --deploy-hook synology_dsm
@@ -189,10 +189,10 @@ If you use Let's Encrypt with a DNS challenge on Cloudflare, set up automatic re
 To ensure your SSL certificate is renewed automatically,
 create a scheduled task in Synology Task Scheduler:
 
-1) Open **Control Panel > Task Scheduler**.
-2) Create a new **User-defined script** task.
-3) Set the schedule (e.g., daily).
-4) In the task script, enter:
+1. Open **Control Panel > Task Scheduler**.
+2. Create a new **User-defined script** task.
+3. Set the schedule (e.g., daily).
+4. In the task script, enter:
 
    ```sh
    sh /volume1/homes/<user>/acme.sh renew -d 'yourdomain.com' --deploy-hook synology_dsm

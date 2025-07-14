@@ -255,14 +255,14 @@ ___
 
 ## Step 5: Testing & Verification
 
-1) Generate a Falco event (e.g. create a file in a restricted directory):
+1. Generate a Falco event (e.g. create a file in a restricted directory):
 
    ```bash
    touch /bin/testfile
    ```
 
-2) Verify it appears in `/var/log/falco.log`
-3) Check Wazuh alerts via `/var/ossec/logs/alerts/alerts.json` or Wazuh UI
+2. Verify it appears in `/var/log/falco.log`
+3. Check Wazuh alerts via `/var/ossec/logs/alerts/alerts.json` or Wazuh UI
 
 ___
 
