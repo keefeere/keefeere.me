@@ -24,7 +24,10 @@ collections:
     widget: "string"
   - label: "Date"
     name: "date"
-    widget: "date"
+    widget: "datetime"
+    date_format: "YYYY-MM-DD"
+    time_format: false
+    format: "YYYY-MM-DD"
   - label: "Description"
     name: "description"
     widget: "text"
