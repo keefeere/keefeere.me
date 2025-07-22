@@ -25,8 +25,8 @@ collections:
 - name: "blog"
   label: "Blog"
   folder: "content/blog"
+  path: "{{slug}}/index"
   create: true
-  slug: "{{slug}}"
   extension: "md"
   format: "yaml-frontmatter"
   media_folder: ''
