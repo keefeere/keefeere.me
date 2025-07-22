@@ -7,12 +7,11 @@ tags:
   - tag2
   - multi tag
 ---
-
 # Head
 
 body
 
-Текс **bold&#32;**норм
+Текст **Жирн**норм
 
 **`dsadsadsadsa`**
 
