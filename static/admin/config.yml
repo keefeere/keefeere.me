@@ -16,6 +16,8 @@ collections:
   slug: "{{slug}}"
   extension: "md"
   #format: "yaml"
+  media_folder: ''
+  public_folder: ''
   fields:
   - label: "Title"
     name: "title"
