@@ -8,6 +8,19 @@ backend:
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
+media_libraries:
+  default:
+    config:
+      transformations:
+        raster_image:
+          # original format
+          format: webp # new format, only `webp` is supported
+          quality: 85 # default: 85
+          width: 1024 # default: original size
+          height: 1024 # default: original size
+        svg:
+          optimize: true
+
 collections:
 - name: "blog"
   label: "Blog"
