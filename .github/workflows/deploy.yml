@@ -18,7 +18,7 @@ jobs:
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: 'latest' #TODO pin version
           extended: true
       - name: Install Markdown Linter (mdl)
         run: |
