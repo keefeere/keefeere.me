@@ -7,7 +7,6 @@ tags:
   - tag2
   - multi tag
 ---
-
 # Head
 
 body
@@ -18,7 +17,7 @@ body
 
 **`dsadsads`**
 
-```
+```bash
 code block
 code
 dsa
