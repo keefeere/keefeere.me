@@ -1,10 +1,9 @@
-
 ---
 title: "Integrating Sveltia CMS with Hugo: A Real-World Setup"
 date: "2025-07-11"
 description: >
-    A complete guide to integrating Sveltia CMS with a Hugo-based static
-    site. Lessons learned, problems faced, and how to avoid common pitfalls.
+  A complete guide to integrating Sveltia CMS with a Hugo-based static
+  site. Lessons learned, problems faced, and how to avoid common pitfalls.
 tags: ["Hugo", "Sveltia", "CMS", "GitHub", "Netlify"]
 ---
 
@@ -36,60 +35,65 @@ Create `static/admin/` directory and add the following:
 `static/admin/index.html`
 
 ```html
-    <!doctype html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8" />
-      <title>Sveltia CMS</title>
-      <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"
-              onload="SVELTIA.start()"
-              onerror="document.body.innerHTML='Failed to load Sveltia CMS'">
-      </script>
-      <link href="/admin/config.yml" type="application/yaml" rel="cms-config-url" />
-    </head>
-    <body></body>
-    </html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sveltia CMS</title>
+    <script
+      src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"
+      onload="SVELTIA.start()"
+      onerror="document.body.innerHTML='Failed to load Sveltia CMS'"
+    ></script>
+    <link
+      href="/admin/config.yml"
+      type="application/yaml"
+      rel="cms-config-url"
+    />
+  </head>
+  <body></body>
+</html>
 ```
 
 `static/admin/config.yml`
 
 ```yml
-    backend:
-      name: github
-      repo: yourusername/yourrepo
-      branch: main
-      auth:
-        client_id: YOUR_GITHUB_OAUTH_CLIENT_ID
+backend:
+  name: github
+  repo: yourusername/yourrepo
+  branch: main
+  auth:
+    client_id: YOUR_GITHUB_OAUTH_CLIENT_ID
 
-    media_folder: "static/uploads"
-    public_folder: "/uploads"
+media_folder: "static/uploads"
+public_folder: "/uploads"
 
-    collections:
-      - name: "blog"
-        label: "Blog Posts"
-        folder: "content/blog"
-        create: true
-        slug: "{{slug}}"
-        extension: "md"
-        format: "yaml"
-        fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
-          - label: "Date"
-            name: "date"
-            widget: "datetime"
-          - label: "Description"
-            name: "description"
-            widget: "text"
-            required: false
-          - label: "Tags"
-            name: "tags"
-            widget: "list"
-            required: false
-          - label: "Body"
-            name: "body"
-            widget: "markdown"
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "yaml"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
 ```
 
 ### 2) Create GitHub OAuth App
@@ -136,8 +140,8 @@ Example of valid frontmatter:
 In GitHub Actions:
 
 ```yaml
-    - name: Clean Hugo output directory
-      run: rm -rf public/
+- name: Clean Hugo output directory
+  run: rm -rf public/
 ```
 
 Cleaning avoids publishing outdated or conflicting files.

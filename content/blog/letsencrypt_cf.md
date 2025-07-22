@@ -2,9 +2,10 @@
 title: "Setting Up Let's Encrypt with DNS Challenge Using Cloudflare on Synology"
 date: 2025-03-21
 description: >
-   A step-by-step guide to obtaining Let's Encrypt certificates using
-   the DNS-01 challenge with Cloudflare DNS on Synology NAS.
-tags: ["Let's Encrypt", "Cloudflare", "DNS Challenge", "SSL", "acme.sh", "Synology"]
+  A step-by-step guide to obtaining Let's Encrypt certificates using
+  the DNS-01 challenge with Cloudflare DNS on Synology NAS.
+tags:
+  ["Let's Encrypt", "Cloudflare", "DNS Challenge", "SSL", "acme.sh", "Synology"]
 ---
 
 Securing your Synology NAS with SSL/TLS certificates is essential. Since
@@ -39,9 +40,9 @@ Before starting, ensure you have:
 For security, it's best to create a separate user for managing
 certificates instead of using `root`.
 
-1) Log in to your Synology DSM.
-2) Go to **Control Panel** → **User & Group**.
-3) Click **Create** to add a new user:
+1. Log in to your Synology DSM.
+2. Go to **Control Panel** → **User & Group**.
+3. Click **Create** to add a new user:
 
 - Username: `mycertadmin`
 - Password: Set a strong password.
@@ -57,11 +58,11 @@ curl https://get.acme.sh | sh
 
 ## Step 4: Configure Cloudflare API Token and Synology login data
 
-1) Log in to [Cloudflare Dashboard](https://dash.cloudflare.com/).
-2) Navigate to **My Profile** → **API Tokens**.
-3) Click **Create Token** and use the **Edit zone DNS** template.
-4) Choose **Specific Zone** and select your domain.
-5) Copy the generated token.
+1. Log in to [Cloudflare Dashboard](https://dash.cloudflare.com/).
+2. Navigate to **My Profile** → **API Tokens**.
+3. Click **Create Token** and use the **Edit zone DNS** template.
+4. Choose **Specific Zone** and select your domain.
+5. Copy the generated token.
 
 Set the API token and username created previous steps in your environment:
 

@@ -63,7 +63,7 @@ Copy the contents of `~/.ssh/id_rsa.pub` and add it to your Synology NAS:
 1. Log in to your NAS and go to **Control Panel > Terminal & SNMP**.
 2. Enable SSH service.
 3. Place the public key inside `/volume1/homes/<user>/.ssh/authorized_keys`
-  and set the correct permissions:
+   and set the correct permissions:
 
    ```sh
    chmod 700 /volume1/homes/<user>/.ssh
@@ -99,48 +99,48 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        submodules: 'true'  # Ensures theme submodules are pulled
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: "true" # Ensures theme submodules are pulled
 
-    - name: Install Hugo
-      run: |
-        wget https://github.com/gohugoio/hugo/releases/download/v0.142.0/hugo_extended_0.142.0_Linux-64bit.tar.gz
-        tar -xzf hugo_extended_0.142.0_Linux-64bit.tar.gz
-        sudo mv hugo /usr/local/bin/
+      - name: Install Hugo
+        run: |
+          wget https://github.com/gohugoio/hugo/releases/download/v0.142.0/hugo_extended_0.142.0_Linux-64bit.tar.gz
+          tar -xzf hugo_extended_0.142.0_Linux-64bit.tar.gz
+          sudo mv hugo /usr/local/bin/
 
-    - name: Build Hugo Site
-      run: hugo --minify
+      - name: Build Hugo Site
+        run: hugo --minify
 
-    - name: Deploy to Synology NAS
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        SSH_USER: ${{ secrets.SSH_USER }}
-        SSH_HOST: ${{ secrets.SSH_HOST }}
-        SSH_PORT: ${{ secrets.SSH_PORT }}
-        SSH_TARGET_DIR: "/volume1/web/mysite"
-      run: |
-        echo "$SSH_PRIVATE_KEY" > id_rsa && chmod 600 id_rsa
-        export RSYNC_RSH="ssh -p $SSH_PORT -i id_rsa"
-        tar -czf site.tar.gz -C public .
-        scp -P $SSH_PORT -O site.tar.gz $SSH_USER@$SSH_HOST:/volume1/homes/$SSH_USER/site.tar.gz
-        ssh -p $SSH_PORT -i id_rsa $SSH_USER@$SSH_HOST "sudo tar -xzf \
-            /volume1/homes/$SSH_USER/site.tar.gz -C $SSH_TARGET_DIR"
+      - name: Deploy to Synology NAS
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_PORT: ${{ secrets.SSH_PORT }}
+          SSH_TARGET_DIR: "/volume1/web/mysite"
+        run: |
+          echo "$SSH_PRIVATE_KEY" > id_rsa && chmod 600 id_rsa
+          export RSYNC_RSH="ssh -p $SSH_PORT -i id_rsa"
+          tar -czf site.tar.gz -C public .
+          scp -P $SSH_PORT -O site.tar.gz $SSH_USER@$SSH_HOST:/volume1/homes/$SSH_USER/site.tar.gz
+          ssh -p $SSH_PORT -i id_rsa $SSH_USER@$SSH_HOST "sudo tar -xzf \
+              /volume1/homes/$SSH_USER/site.tar.gz -C $SSH_TARGET_DIR"
 ```
 
 ### Important Notes
 
 - **Use `-O` in `scp`** to ensure proper permissions.
 - **SSH paths are relative** to `/volume1/homes/<user>`
-    by default.
+  by default.
 - **Target directory `/volume1/web/mysite` requires sudo permissions**,
-    so we extract the files using `sudo tar`.
+  so we extract the files using `sudo tar`.
 - **Ensure GitHub Secrets are configured**:
-   - `SSH_PRIVATE_KEY`: Private key for SSH authentication.
-   - `SSH_USER`: Username on the NAS.
-   - `SSH_HOST`: NAS IP or domain.
-   - `SSH_PORT`: Custom SSH port.
+  - `SSH_PRIVATE_KEY`: Private key for SSH authentication.
+  - `SSH_USER`: Username on the NAS.
+  - `SSH_HOST`: NAS IP or domain.
+  - `SSH_PORT`: Custom SSH port.
 
 To make your site accessible via a domain:
 

@@ -42,29 +42,30 @@ thread. Benefits:
    Select your blog repository from the list and grant access
    (This is required so Giscus can read and write Discussions in your repo)
 4. After installing the app:
-   1) Select your repo
-   2) Choose the Discussion category (or create one)
-   3) Pick your preferred options:
-   4) Mapping: pathname or title
-   5) Theme: preferred_color_scheme, dark_dimmed, etc.
-   6) Enable Reactions, metadata, etc.
+   1. Select your repo
+   2. Choose the Discussion category (or create one)
+   3. Pick your preferred options:
+   4. Mapping: pathname or title
+   5. Theme: preferred_color_scheme, dark_dimmed, etc.
+   6. Enable Reactions, metadata, etc.
 5. Copy the generated `<script>` block.
 
 Example:
 
 ```html
-<script src="https://giscus.app/client.js"
-        data-repo="your-username/your-blog-repo"
-        data-repo-id="..."
-        data-category="General"
-        data-category-id="..."
-        data-mapping="pathname"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-theme="preferred_color_scheme"
-        crossorigin="anonymous"
-        async>
-</script>
+<script
+  src="https://giscus.app/client.js"
+  data-repo="your-username/your-blog-repo"
+  data-repo-id="..."
+  data-category="General"
+  data-category-id="..."
+  data-mapping="pathname"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-theme="preferred_color_scheme"
+  crossorigin="anonymous"
+  async
+></script>
 ```
 
 ⚠️ If you skip installing the GitHub App, Giscus will render a blank
@@ -82,10 +83,7 @@ Content:
 
 ```html
 {{ define "main" }}
-  <main>
-    {{ .Content }}
-    {{ partial "giscus.html" . }}
-  </main>
+<main>{{ .Content }} {{ partial "giscus.html" . }}</main>
 {{ end }}
 ```
 
@@ -104,18 +102,19 @@ Paste your script there:
 
 ```html
 <div id="comments" style="margin-top: 3rem;">
-  <script src="https://giscus.app/client.js"
-          data-repo="your-username/your-blog-repo"
-          data-repo-id="..."
-          data-category="General"
-          data-category-id="..."
-          data-mapping="pathname"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-theme="preferred_color_scheme"
-          crossorigin="anonymous"
-          async>
-  </script>
+  <script
+    src="https://giscus.app/client.js"
+    data-repo="your-username/your-blog-repo"
+    data-repo-id="..."
+    data-category="General"
+    data-category-id="..."
+    data-mapping="pathname"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-theme="preferred_color_scheme"
+    crossorigin="anonymous"
+    async
+  ></script>
 </div>
 ```
 
@@ -124,11 +123,11 @@ Paste your script there:
 Use data-theme="preferred_color_scheme" to match user’s system preference.
 
 Other available themes:
- • light
- • dark
- • dark_dimmed
- • transparent_dark
- • noborder_dark
+• light
+• dark
+• dark_dimmed
+• transparent_dark
+• noborder_dark
 
 See Giscus theme preview for examples.
 

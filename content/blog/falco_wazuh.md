@@ -49,13 +49,13 @@ rules to generate alerts.
 
 ## Prerequisites
 
-* Working Kubernetes cluster
-* Helm 3 installed
-* rsyslog running on Wazuh host
-* Wazuh manager with access to the log file and custom decoders/rules enabled
-* UDP port 10514 open and reachable from Kubernetes nodes
+- Working Kubernetes cluster
+- Helm 3 installed
+- rsyslog running on Wazuh host
+- Wazuh manager with access to the log file and custom decoders/rules enabled
+- UDP port 10514 open and reachable from Kubernetes nodes
 
-___
+---
 
 ## Step 1: Deploy Falco with Falcosidekick
 
@@ -83,8 +83,8 @@ falcosidekick:
       hosts:
         - host: falco-ui.example.com
           paths:
-          - path: /
-            pathType: Prefix
+            - path: /
+              pathType: Prefix
       annotations:
         kubernetes.io/ingress.class: alb
         alb.ingress.kubernetes.io/scheme: internet-facing
@@ -120,7 +120,7 @@ helm upgrade --install falco falcosecurity/falco \
   -f values-falco.yml
 ```
 
-___
+---
 
 ## Step 2: Configure rsyslog
 
@@ -150,7 +150,7 @@ Restart `rsyslog` to apply:
 systemctl restart rsyslog
 ```
 
-___
+---
 
 ## Step 3: Setup logrotate
 
@@ -170,7 +170,7 @@ Add a logrotate policy in `/etc/logrotate.d/falco`:
 }
 ```
 
-___
+---
 
 ## Step 4: Wazuh Configuration
 
@@ -251,7 +251,7 @@ Restart the Wazuh manager:
 systemctl restart wazuh-manager
 ```
 
-___
+---
 
 ## Step 5: Testing & Verification
 
@@ -264,7 +264,7 @@ ___
 2. Verify it appears in `/var/log/falco.log`
 3. Check Wazuh alerts via `/var/ossec/logs/alerts/alerts.json` or Wazuh UI
 
-___
+---
 
 ## Conclusion
 

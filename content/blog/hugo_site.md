@@ -15,12 +15,12 @@ Hugo-based blog and deploying it to GitHub Pages with CI/CD automation.
 
 Before you start, ensure you have the following installed:
 
-* [Go](https://go.dev/dl/)
-* [Hugo](https://gohugo.io/getting-started/installing/)
-* [Git](https://git-scm.com/downloads)
-* A GitHub account
+- [Go](https://go.dev/dl/)
+- [Hugo](https://gohugo.io/getting-started/installing/)
+- [Git](https://git-scm.com/downloads)
+- A GitHub account
 
-___
+---
 
 ## Step 1: Create a New Hugo Site
 
@@ -102,7 +102,7 @@ jobs:
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: "latest"
       - name: Build
         run: hugo --minify
       - name: Deploy
@@ -116,10 +116,10 @@ Commit and push this file. GitHub Actions will now build and deploy your site au
 
 ## Step 6: Configure GitHub Pages
 
-* Go to your GitHub repository
-* Open "Settings" → "Pages"
-* Set the source branch to `gh-pages`
-* Your blog will be available at `https://YOUR_USERNAME.github.io/YOUR_REPO/`
+- Go to your GitHub repository
+- Open "Settings" → "Pages"
+- Set the source branch to `gh-pages`
+- Your blog will be available at `https://YOUR_USERNAME.github.io/YOUR_REPO/`
 
 ## Conclusion
 
