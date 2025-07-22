@@ -15,7 +15,7 @@ collections:
   create: true
   slug: "{{slug}}"
   extension: "md"
-  #format: "yaml"
+  format: "yaml-frontmatter"
   media_folder: ''
   public_folder: ''
   fields:
