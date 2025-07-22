@@ -20,14 +20,26 @@ jobs:
         with:
           hugo-version: 'latest' #TODO pin version
           extended: true
-      - name: Install Markdown Linter (mdl)
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ruby ruby-dev
-          sudo gem install mdl
 
-      - name: Lint Markdown (optional)
-        run: mdl content/
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Prettier and markdownlint-cli2
+        run: npm install -g prettier markdownlint-cli2
+
+      - name: Run Prettier (auto-format)
+        run: prettier --write "content/**/*.md"
+
+      - name: Commit Prettier fixes (if any)
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git diff --quiet || (git commit -am "fix: autoformat markdown via prettier" && git push)
+
+      - name: Run markdownlint-cli2
+        run: markdownlint-cli2 "content/**/*.md"
 
       - name: Clean public dir
         run: rm -rf public/      
@@ -48,5 +60,3 @@ jobs:
           ssh -i ~/.ssh/id_rsa -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "sudo rm -rf ${{ secrets.SSH_TARGET_DIR }}/*"
           scp -O -i ~/.ssh/id_rsa -P ${{ secrets.SSH_PORT }} site.tar.gz ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:site.tar.gz
           ssh -i ~/.ssh/id_rsa -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "sudo tar -xzf /volume1/homes/${{ secrets.SSH_USER }}/site.tar.gz -C ${{ secrets.SSH_TARGET_DIR }} && rm /volume1/homes/${{ secrets.SSH_USER }}/site.tar.gz"
-
-          
