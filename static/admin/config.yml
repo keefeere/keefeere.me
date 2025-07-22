@@ -16,8 +16,8 @@ media_libraries:
           # original format
           format: webp # new format, only `webp` is supported
           quality: 85 # default: 85
-          width: 1024 # default: original size
-          height: 1024 # default: original size
+          width: 2048 # default: original size
+          height: 2048 # default: original size
         svg:
           optimize: true
 
