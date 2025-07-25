@@ -1,19 +1,21 @@
 ---
-title: "Automated Photo Renaming and Archiving with Bash and Exiftool"
+title: "Made Photo Renaming tool with Bash and Exiftool"
 date: 2025-07-25
 tags: ["bash", "photo", "exif", "backup", "synology", "file-management"]
 summary: "Organize your chaotic photo backups into a clean, chronological archive with a smart, cross-platform Bash script."
-repo: "https://github.com/your-username/photo_renamer"
+repo: "https://github.com/keefeere/photo_renamer"
 ---
 
-# photo_renamer.sh
+# Photo Renamer
+
+Just made Photo Renamer script
 
 **photo_renamer.sh** is a cross-platform shell script for organizing messy
 photo/video archives into a clean, chronological folder structure based on
 metadata (EXIF and fallback timestamps). Designed to handle multi-device backups
 with duplicates, inconsistent naming, and unsorted content.
 
-👉 You can find the full script and instructions on GitHub: [photo_renamer.sh](https://github.com/your-username/photo_renamer)
+👉 You can find the full script and instructions on GitHub: [photo_renamer.sh](https://github.com/keefeere/photo_renamer)
 
 ## ✨ Features
 
