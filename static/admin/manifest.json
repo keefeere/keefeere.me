@@ -1,6 +1,6 @@
 {
   "name": "KeeFeeRe Admin",
-  "short_name": "Admin",
+  "short_name": "KeFeeRe.me Admin",
   "start_url": "/admin/",
   "display": "standalone",
   "background_color": "#ffffff",
