@@ -72,7 +72,7 @@ sh photo_renamer.sh
 - Requires exiftool
 - Tested on macOS, Linux, Synology DSM (with exiftool installed)
 - Interactive confirmation before renaming
-- Excludes already renamed folders (_Renamed, @eaDir, @Recycle, etc.)
+- Excludes already renamed folders (\_Renamed, @eaDir, @Recycle, etc.)
 
 ⚙️ Configuration
 
