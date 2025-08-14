@@ -3,7 +3,7 @@ title: "Made Photo Renaming tool with Bash and Exiftool"
 date: 2025-07-25
 tags: ["bash", "photo", "exif", "backup", "synology", "file-management"]
 summary: "Organize your chaotic photo backups into a clean, chronological archive with a smart, cross-platform Bash script."
-repo: "https://github.com/keefeere/photo_renamer"
+repo: "<https://github.com/keefeere/photo_renamer>"
 ---
 
 # Photo Renamer
