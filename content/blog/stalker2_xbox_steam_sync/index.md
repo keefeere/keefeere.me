@@ -68,7 +68,8 @@ many backups to keep.
 
 To play and sync saves across Steam, Windows UWP Xbox version, and Xbox console
 version (Deluxe or Ultimate editions), you must purchase separate licenses for
-each platform.
+each platform. Additionally, save files from Deluxe or Ultimate editions are not
+compatible with the Standard edition of the game.
 
 ## GitHub Repository
 
