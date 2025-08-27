@@ -8,13 +8,13 @@ description: "Scripts to synchronize save game files between Steam and Xbox vers
 ---
 
 I ran into an issue with synchronizing save files between the Steam and Xbox
-versions of *Stalker 2* on Windows.  
+versions of _Stalker 2_ on Windows.  
 To solve this, I created a set of PowerShell scripts to back up and transfer
 saves between the two versions safely.  
 You can find the scripts and more details on [GitHub](https://github.com/keefeere/stalker2-steam-xbox-sync).
 
 These scripts help synchronize save files between the Steam and Xbox Game Pass
-versions of *Stalker 2* on the same Windows PC. They create timestamped backups
+versions of _Stalker 2_ on the same Windows PC. They create timestamped backups
 and manage a rotation of recent backups to prevent data loss.
 
 ## Script Descriptions
