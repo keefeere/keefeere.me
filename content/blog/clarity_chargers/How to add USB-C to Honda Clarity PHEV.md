@@ -47,8 +47,8 @@ There is keyless access antenna behind that panel. You should unscrew it.
 
 ![There are a few clips holding it in place at front side. Be careful not to
 break them how I almost do.](/blog/clarity_chargers/resources/IMG_3305.jpeg)
-*There are a few clips holding it in place at front side. Be careful not to
-break them how I almost do.*
+_There are a few clips holding it in place at front side. Be careful not to
+break them how I almost do._
 
 ![Pull out the panel with the front side facing first.](/blog/clarity_chargers/resources/IMG_3306.jpeg)
 _Pull out the panel with the front side facing first._
@@ -62,8 +62,8 @@ Now it's time to make space for the new USB-C sockets and connect them.
 
 ![Use a step drill to create the holes for the new sockets. Measure the diameter
 of your USB-C chargers to ensure a snug fit.](/blog/clarity_chargers/resources/IMG_3308.jpeg)
-*Use a step drill to create the holes for the new sockets. Measure the diameter
-of your USB-C chargers to ensure a snug fit.*
+_Use a step drill to create the holes for the new sockets. Measure the diameter
+of your USB-C chargers to ensure a snug fit._
 
 ![The panel with the new holes drilled and charger installed.](/blog/clarity_chargers/resources/IMG_3309.jpeg)
 _The panel with the new holes drilled and charger installed._
@@ -80,8 +80,8 @@ _Drilling bracket started_
 
 ![Don't forget to connect antenna. I put it behind main bracket and tied it with
 nylon ties.](/blog/clarity_chargers/resources/IMG_3312.jpeg)
-*Don't forget to connect antenna. I put it behind main bracket and tied it with
-nylon ties.*
+_Don't forget to connect antenna. I put it behind main bracket and tied it with
+nylon ties._
 
 ![Cut and try to fit panel until it fits completely](/blog/clarity_chargers/resources/IMG_3314.jpeg)
 _Cut and try to fit panel until it fits completely_
@@ -99,13 +99,13 @@ Measure and strip two pieces of spare wire, 15-20 cm long.
 
 ![Solder the wires to create a Y-splitter. This will allow you to power both the
 original 12V socket and the new USB-C sockets.](/blog/clarity_chargers/resources/IMG_3317.jpeg)
-*Solder the wires to create a Y-splitter. This will allow you to power both the
-original 12V socket and the new USB-C sockets.*
+_Solder the wires to create a Y-splitter. This will allow you to power both the
+original 12V socket and the new USB-C sockets._
 
 ![Use heat shrink tubing to insulate the solder joints. After shrinking wrap
 wires with fabric tape](/blog/clarity_chargers/resources/IMG_3318.jpeg)
-*Use heat shrink tubing to insulate the solder joints. After shrinking wrap wires
-with fabric tape*
+_Use heat shrink tubing to insulate the solder joints. After shrinking wrap wires
+with fabric tape_
 
 Now time to connect our new harness to wires of the cigarette lighter power
 connector.
@@ -150,10 +150,10 @@ _Rear pannel with air outlets removed, view on inside air ducts_
 that secure them didn't fit, so I had to remove some plastic from the inside
 around the intended installation site—on either side of the standard cigarette
 lighter socket.](/blog/clarity_chargers/resources/IMG_3328.jpeg)
-*The chargers I prepared for installation didn't quite fit, or rather, the nuts
+_The chargers I prepared for installation didn't quite fit, or rather, the nuts
 that secure them didn't fit, so I had to remove some plastic from the inside
 around the intended installation site—on either side of the standard
-cigarette lighter socket.*
+cigarette lighter socket._
 
 ![Finally, they got in.](/blog/clarity_chargers/resources/IMG_3329.jpeg)
 _Finally, they got in._
