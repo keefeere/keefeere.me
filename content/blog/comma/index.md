@@ -3,8 +3,9 @@ title: "Installing Comma.ai OpenPilot on Honda Clarity PHEV"
 date: 2025-08-28
 draft: false
 tags: ["Honda Clarity", "PHEV", "Comma.ai", "OpenPilot", "DIY", "Car Mods"]
-description: "A step-by-step guide to installing Comma.ai's OpenPilot system on the \
-Honda Clarity PHEV with practical notes and driving impressions."
+description:
+  "A step-by-step guide to installing Comma.ai's OpenPilot system on the \
+  Honda Clarity PHEV with practical notes and driving impressions."
 ---
 
 # Installing Comma.ai OpenPilot on Honda Clarity PHEV
@@ -99,7 +100,7 @@ is better.
 
 ![Comma in box vertical](/blog/comma/resources/IMG_3846.jpeg)
 ![Comma in box horizontal](/blog/comma/resources/IMG_3847.jpeg)
-*Comma with proxy board and harness*
+_Comma with proxy board and harness_
 
 ### Tools required
 
@@ -108,75 +109,75 @@ is better.
 
 ### Step-by-step installation
 
-1. Remove the panel under the stereo using pry tool.  
+1. Remove the panel under the stereo using pry tool.
 2. Remove the stereo itself (two screws under the panel).
 3. Pull off the side kick panel and the panel above the passenger’s feet. Be
-    careful — some wires for footwell lighting are taped here.  
+   careful — some wires for footwell lighting are taped here.
 4. Remove the panels above the stereo — they are clipped in place. Use the pry
-    tool carefully and pull towards yourself.  
+   tool carefully and pull towards yourself.
 5. Remove the glove box (carefully, there are light connectors too):
-    - One screw inside the glove box behind a cover
-    - Two screws underneath the glove box
-    - Three screws on top of the glove box  
+   - One screw inside the glove box behind a cover
+   - Two screws underneath the glove box
+   - Three screws on top of the glove box
 6. Locate the CAN gateway behind the stereo:
-    ![Place of can gateway](/blog/comma/resources/IMG_3853.jpeg)
-    *Can gateway behind this panel*
+   ![Place of can gateway](/blog/comma/resources/IMG_3853.jpeg)
+   _Can gateway behind this panel_
 7. Proxy board connects behind CAN gateway. Orientation does not matter;
 8. it is not polarized.
    ![Can gateway and proxy board](/blog/comma/resources/IMG_3852.jpeg)
-    *Proxy board connected*
-9. *Optional* Wrap Proxy board with fabric tape.
-    ![Proxy board wraped with tape](/blog/comma/resources/IMG_3855.jpeg)
-    *Proxy board wrapped*
+   _Proxy board connected_
+9. _Optional_ Wrap Proxy board with fabric tape.
+   ![Proxy board wraped with tape](/blog/comma/resources/IMG_3855.jpeg)
+   _Proxy board wrapped_
 10. Zip tie proxy boad to free ear of the bracket near the gateway
     ![Proxy board zip tied](/blog/comma/resources/IMG_3856.jpeg)
     ![Place of zip tie](/blog/comma/resources/IMG_3857.jpeg)
-    *Where zip tie goes*
+    _Where zip tie goes_
 11. Remove the camera cover — it comes off by sliding it upwards toward the
     headliner, then down towards you.
 12. Find the camera connector located behind the rearview mirror. The car must
-    be off when you unplug it.  
+    be off when you unplug it.
 13. Disconnect the camera connector — there is a clip on the connector, gently
-    pry and pull it off.  
+    pry and pull it off.
 14. Connect the Comma harness to the camera wiring (connectors are different
     male/female, so no mix-up).  
     ![Comma with harness](/blog/comma/resources/IMG_3851.jpeg)
-    *Comma with harness*
+    _Comma with harness_
 15. Connect the Harness Box to the harness wiring. Wrap the harness if you wish
     ![Camera harness](/blog/comma/resources/IMG_3867.jpeg)
     ![Camera harness wrapped](/blog/comma/resources/IMG_3868.jpeg)
-    *Camera harness wrapped, harness box is under the harness*
+    _Camera harness wrapped, harness box is under the harness_
 16. Cut some part of base to make type-c cable free out
     ![TypeC out](/blog/comma/resources/IMG_3869.jpeg)
-    *Type-C out*
+    _Type-C out_
 17. Make cut-out in Camera cover
     ![Camera cover cut-out](/blog/comma/resources/IMG_3870.jpeg)
-    *Camera cover cut-out*
-18. Link the Harness Box to the Comma device via the Type-C cable.  
+    _Camera cover cut-out_
+18. Link the Harness Box to the Comma device via the Type-C cable.
 19. Mount the Comma device in the center of the windshield as high as possible,
     considering you will need to remove it upward and the camera housing might
     interfere.  
     ![General view](/blog/comma/resources/IMG_3872.jpeg)
     ![General view 2](/blog/comma/resources/IMG_3873.jpeg)
-    *Eventually you should get something like this*
+    _Eventually you should get something like this_
 20. Not need to connect the Proxy Board to the Harness Box — they communicate
-    over CAN.  
-21. Reassemble everything in reverse order.  
+    over CAN.
+21. Reassemble everything in reverse order.
 22. Turn on the car; the Comma device interface will appear. Connect to your
     Wi-Fi and select the OpenPilot branch.
-    - I used *[sunnypilot/release-c3](https://github.com/sunnypilot/sunnypilot/tree/release-c3)*
+    - I used _[sunnypilot/release-c3](https://github.com/sunnypilot/sunnypilot/tree/release-c3)_
       -- this review is based on that branch.
     - You literally just type ‘sunnypilot/release-c3‘ for example, into the
-    URL field.  
+      URL field.
 23. Optionally, register your device on the Comma [Connect](https://connect.comma.ai)
-    website and link it to your account.  
-24. Optionally, download offline OSM maps in OpenPilot settings.  
-25. Configure cruise control, lane keeping, sensitivity, and other parameters.  
+    website and link it to your account.
+24. Optionally, download offline OSM maps in OpenPilot settings.
+25. Configure cruise control, lane keeping, sensitivity, and other parameters.
 26. Calibrate the camera by driving straight at 40 km/h or faster for about a
-    minute.  
+    minute.
 27. Use the steering wheel's **Main** button to enable lane keeping, **Set** to
     activate cruise, and **+/-** to adjust speed. The system will adjust speed
-    based on road limits.  
+    based on road limits.
 28. Enjoy your enhanced driving experience!
 
 ![Sunset Comma view](/blog/comma/resources/IMG_3878.jpeg)
@@ -185,7 +186,7 @@ is better.
 
 The standard OpenPilot release does not officially support the Honda Clarity. To
 use it, you need to rely on forks maintained by the community. For example, there
-is a stock-like fork by *vanillagorilla* that adds Clarity support (but I can't
+is a stock-like fork by _vanillagorilla_ that adds Clarity support (but I can't
 manage to run it), or more feature-rich custom forks that extend compatibility
 across many vehicles and provide additional functionality.
 A comparison of popular branches can be found
