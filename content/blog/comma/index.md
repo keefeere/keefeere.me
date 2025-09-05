@@ -3,8 +3,9 @@ title: "Installing Comma.ai OpenPilot on Honda Clarity PHEV"
 date: 2025-08-28
 draft: false
 tags: ["Honda Clarity", "PHEV", "Comma.ai", "OpenPilot", "DIY", "Car Mods"]
-description: "A step-by-step guide to installing Comma.ai's OpenPilot system on the \
-Honda Clarity PHEV with practical notes and driving impressions."
+description:
+  "A step-by-step guide to installing Comma.ai's OpenPilot system on the \
+  Honda Clarity PHEV with practical notes and driving impressions."
 ---
 
 # Installing Comma.ai OpenPilot on Honda Clarity PHEV
@@ -99,7 +100,7 @@ is better.
 
 ![Comma in box vertical](/blog/comma/resources/IMG_3846.jpeg)
 ![Comma in box horizontal](/blog/comma/resources/IMG_3847.jpeg)
-*Comma with proxy board and harness*
+_Comma with proxy board and harness_
 
 ### Tools required
 
@@ -167,7 +168,7 @@ is better.
 22. Reassemble everything in reverse order.  
 23. Turn on the car; the Comma device interface will appear. Connect to your
     Wi-Fi and select the OpenPilot branch.
-    - I used *[sunnypilot/release-c3](https://github.com/sunnypilot/sunnypilot/tree/release-c3)*
+    - I used _[sunnypilot/release-c3](https://github.com/sunnypilot/sunnypilot/tree/release-c3)_
       -- this review is based on that branch.
     - You literally just type ‘sunnypilot/release-c3‘ for example, into the
     URL field.  
@@ -192,7 +193,7 @@ is better.
 
 The standard OpenPilot release does not officially support the Honda Clarity. To
 use it, you need to rely on forks maintained by the community. For example, there
-is a stock-like fork by *vanillagorilla* that adds Clarity support (but I can't
+is a stock-like fork by _vanillagorilla_ that adds Clarity support (but I can't
 manage to run it), or more feature-rich custom forks that extend compatibility
 across many vehicles and provide additional functionality.
 A comparison of popular branches can be found
