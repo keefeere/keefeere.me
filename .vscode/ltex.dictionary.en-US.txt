@@ -39,3 +39,5 @@ Falcosidekick
 logrotate
 Giscus
 noborder
+PHEV
+TESA
