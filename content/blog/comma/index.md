@@ -38,8 +38,8 @@ customs clearance was a hassle. But the installation itself is quite simple and
 took me about an hour.
 The key is to install the
 [Proxy Board](https://shop.retropilot.org/product/honda-clarity-proxy-board-kit/)
-in-line with the CAN gateway (a box behind the stereo) and connect the wiring
-harness in line with the camera connector. The small
+in-line with the CAN gateway (a box behind the infortainment screen) and connect
+the wiring harness in line with the camera connector. The small
 [Harness Box](https://comma.ai/shop/harness-box) connects here, managing CAN line
 switching when the autopilot computer is plugged or unplugged, and converts the
 physical interface to OBD-C — encapsulating OBD signals into a Type-C interface.
@@ -67,8 +67,8 @@ more. Below, I outline the advantages compared to stock or my assumptions about 
 5. **Traffic jam behavior:** No "Stopped" message requiring you to press buttons
    or gas. The car waits as long as needed in traffic and moves when the car ahead
    moves, with no timeout that I've noticed.
-6. **Driver monitoring:** If you fall asleep, the system beeps and gently brakes
-   to a full stop, disabling cruise control.
+6. **Driver monitoring:** If you fall asleep, the system beeps and gently brakes,
+   disabling cruise control.
 7. **Phone usage detection:** It detects when you use your phone and alerts you.
 8. **Speed reduction on curves:** After some calibration, it can reduce speed
    based on map or visual data for sharp turns. Not always perfectly early, but on
@@ -108,75 +108,82 @@ is better.
 
 ### Step-by-step installation
 
-1. Remove the panel under the stereo using pry tool.  
-2. Remove the stereo itself (two screws under the panel).
+1. Remove the panel under the infotainment screen using pry tool.  
+2. Remove the infotainment screen itself (two screws under the panel).
 3. Pull off the side kick panel and the panel above the passenger’s feet. Be
     careful — some wires for footwell lighting are taped here.  
-4. Remove the panels above the stereo — they are clipped in place. Use the pry
-    tool carefully and pull towards yourself.  
+4. Remove the panels above the infotainment screen — they are clipped in place.
+   Use the pry tool carefully and pull towards yourself.  
 5. Remove the glove box (carefully, there are light connectors too):
     - One screw inside the glove box behind a cover
     - Two screws underneath the glove box
     - Three screws on top of the glove box  
-6. Locate the CAN gateway behind the stereo:
+6. Locate the CAN gateway behind the infotainment screen:
     ![Place of can gateway](/blog/comma/resources/IMG_3853.jpeg)
-    *Can gateway behind this panel*
-7. Proxy board connects behind CAN gateway. Orientation does not matter;
-8. it is not polarized.
-   ![Can gateway and proxy board](/blog/comma/resources/IMG_3852.jpeg)
+    *CAN gateway behind this panel*
+7. Proxy board connects behind CAN gateway. Orientation does not matter it is
+    not polarized.
+    ![Can gateway and proxy board](/blog/comma/resources/IMG_3852.jpeg)
     *Proxy board connected*
+8. After connecting the proxy board, turn on the car and check for errors.
+   The light on the proxy board should be on; it is visible through the white plastic.
 9. *Optional* Wrap Proxy board with fabric tape.
     ![Proxy board wraped with tape](/blog/comma/resources/IMG_3855.jpeg)
     *Proxy board wrapped*
-10. Zip tie proxy boad to free ear of the bracket near the gateway
+10. Zip tie proxy board to free ear of the bracket near the gateway
     ![Proxy board zip tied](/blog/comma/resources/IMG_3856.jpeg)
     ![Place of zip tie](/blog/comma/resources/IMG_3857.jpeg)
     *Where zip tie goes*
-11. Remove the camera cover — it comes off by sliding it upwards toward the
+11. Before assembling the trim, check again for errors by turning on the car.
+12. Remove the camera cover — it comes off by sliding it upwards toward the
     headliner, then down towards you.
-12. Find the camera connector located behind the rearview mirror. The car must
+13. Find the camera connector located behind the rearview mirror. The car must
     be off when you unplug it.  
-13. Disconnect the camera connector — there is a clip on the connector, gently
+14. Disconnect the camera connector — there is a clip on the connector, gently
     pry and pull it off.  
-14. Connect the Comma harness to the camera wiring (connectors are different
+15. Connect the Comma harness to the camera wiring (connectors are different
     male/female, so no mix-up).  
     ![Comma with harness](/blog/comma/resources/IMG_3851.jpeg)
     *Comma with harness*
-15. Connect the Harness Box to the harness wiring. Wrap the harness if you wish
+16. Connect the Harness Box to the harness wiring. Wrap the harness if you wish
     ![Camera harness](/blog/comma/resources/IMG_3867.jpeg)
     ![Camera harness wrapped](/blog/comma/resources/IMG_3868.jpeg)
     *Camera harness wrapped, harness box is under the harness*
-16. Cut some part of base to make type-c cable free out
+17. Cut some part of base to make type-c cable free out
     ![TypeC out](/blog/comma/resources/IMG_3869.jpeg)
     *Type-C out*
-17. Make cut-out in Camera cover
+18. Make cut-out in Camera cover
     ![Camera cover cut-out](/blog/comma/resources/IMG_3870.jpeg)
     *Camera cover cut-out*
-18. Link the Harness Box to the Comma device via the Type-C cable.  
-19. Mount the Comma device in the center of the windshield as high as possible,
+19. Link the Harness Box to the Comma device via the Type-C cable.  
+20. Mount the Comma device in the center of the windshield as high as possible,
     considering you will need to remove it upward and the camera housing might
     interfere.  
     ![General view](/blog/comma/resources/IMG_3872.jpeg)
     ![General view 2](/blog/comma/resources/IMG_3873.jpeg)
     *Eventually you should get something like this*
-20. Not need to connect the Proxy Board to the Harness Box — they communicate
+21. Not need to connect the Proxy Board to the Harness Box — they communicate
     over CAN.  
-21. Reassemble everything in reverse order.  
-22. Turn on the car; the Comma device interface will appear. Connect to your
+22. Reassemble everything in reverse order.  
+23. Turn on the car; the Comma device interface will appear. Connect to your
     Wi-Fi and select the OpenPilot branch.
     - I used *[sunnypilot/release-c3](https://github.com/sunnypilot/sunnypilot/tree/release-c3)*
       -- this review is based on that branch.
     - You literally just type ‘sunnypilot/release-c3‘ for example, into the
     URL field.  
-23. Optionally, register your device on the Comma [Connect](https://connect.comma.ai)
+24. Optionally, register your device on the Comma [Connect](https://connect.comma.ai)
     website and link it to your account.  
-24. Optionally, download offline OSM maps in OpenPilot settings.  
-25. Configure cruise control, lane keeping, sensitivity, and other parameters.  
+25. Optionally, download offline OSM maps in OpenPilot settings.  
 26. Calibrate the camera by driving straight at 40 km/h or faster for about a
     minute.  
-27. Use the steering wheel's **Main** button to enable lane keeping, **Set** to
-    activate cruise, and **+/-** to adjust speed. The system will adjust speed
-    based on road limits.  
+27. Start using the system as you would normally use Adaptive Cruise Control  
+    (ACC): press **SET** to activate cruise, use **+/-** to adjust speed, and  
+    **CANCEL/RESUME** to control it. When ACC is engaged, Lane Keeping Assist  
+    (LKAS) will automatically activate. In Sunnypilot, LKAS will also remain  
+    active even if ACC is disengaged - thanks to MADS feature. Most drivers will
+    not need to use the **Main** button; typically it is enough to press the
+    LKAS button once per drive, after which OpenPilot will manage it
+    automatically when ACC is on.
 28. Enjoy your enhanced driving experience!
 
 ![Sunset Comma view](/blog/comma/resources/IMG_3878.jpeg)
