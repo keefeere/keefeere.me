@@ -41,3 +41,5 @@ Giscus
 noborder
 PHEV
 TESA
+OpenPilot
+sunnypilot
