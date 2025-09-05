@@ -39,10 +39,10 @@ power outlet.
 First, you need to remove the panel.
 
 ![This is the area we will be working on.](/blog/clarity_chargers/resources/IMG_3303.jpeg)
-*This is the area we will be working on.*
+_This is the area we will be working on._
 
 ![Use a pry tool to gently pop out the panel from the back where sockets.](/blog/clarity_chargers/resources/IMG_3304.jpeg)
-*Use a pry tool to gently pop out the panel from the back where sockets.*
+_Use a pry tool to gently pop out the panel from the back where sockets._
 There is keyless access antenna behind that panel. You should unscrew it.
 
 ![There are a few clips holding it in place at front side. Be careful not to
@@ -51,10 +51,10 @@ break them how I almost do.](/blog/clarity_chargers/resources/IMG_3305.jpeg)
 break them how I almost do.*
 
 ![Pull out the panel with the front side facing first.](/blog/clarity_chargers/resources/IMG_3306.jpeg)
-*Pull out the panel with the front side facing first.*
+_Pull out the panel with the front side facing first._
 
 ![Once the panel is loose, you can disconnect the wiring harness.](/blog/clarity_chargers/resources/IMG_3307.jpeg)
-*Once the panel is loose, you can disconnect the wiring harness.*
+_Once the panel is loose, you can disconnect the wiring harness._
 
 ### 2. Drilling and Chargers Installation
 
@@ -66,17 +66,17 @@ of your USB-C chargers to ensure a snug fit.](/blog/clarity_chargers/resources/I
 of your USB-C chargers to ensure a snug fit.*
 
 ![The panel with the new holes drilled and charger installed.](/blog/clarity_chargers/resources/IMG_3309.jpeg)
-*The panel with the new holes drilled and charger installed.*
+_The panel with the new holes drilled and charger installed._
 
 ![The removed panel ready to install](/blog/clarity_chargers/resources/IMG_3310.jpeg)
-*The removed panel ready to install*
+_The removed panel ready to install_
 
 But we cannot install the panel now because there is a keyless access antenna
 bracket behind the panel. It needs to be removed, and a space cut out for the
 chargers.
 
 ![Drilling bracket started](/blog/clarity_chargers/resources/IMG_3311.jpeg)
-*Drilling bracket started*
+_Drilling bracket started_
 
 ![Don't forget to connect antenna. I put it behind main bracket and tied it with
 nylon ties.](/blog/clarity_chargers/resources/IMG_3312.jpeg)
@@ -84,7 +84,7 @@ nylon ties.](/blog/clarity_chargers/resources/IMG_3312.jpeg)
 nylon ties.*
 
 ![Cut and try to fit panel until it fits completely](/blog/clarity_chargers/resources/IMG_3314.jpeg)
-*Cut and try to fit panel until it fits completely*
+_Cut and try to fit panel until it fits completely_
 
 ### 3. Wiring Preparation
 
@@ -93,7 +93,7 @@ We will take power from stock cigarette lighting socket.
 Lets use our spare wiring to create Y-connector that powers additional chargers.
 
 ![Prepare your spare wiring and soldering tools.](/blog/clarity_chargers/resources/IMG_3316.jpeg)
-*Prepare your spare wiring and soldering tools.*
+_Prepare your spare wiring and soldering tools._
 
 Measure and strip two pieces of spare wire, 15-20 cm long.
 
@@ -112,25 +112,25 @@ connector.
 
 ![Remove part of the insulation after the connector that powers stock cigarette
 lighter.](/blog/clarity_chargers/resources/IMG_3319.jpeg)
-*Remove part of the insulation after the connector that powers stock cigarette lighter.*
+_Remove part of the insulation after the connector that powers stock cigarette lighter._
 
 ![Use a multimeter to check the voltage and polarity of the original socket's
 connector.](/blog/clarity_chargers/resources/IMG_3320.jpeg)
-*Use a multimeter to check the voltage and polarity of the original socket's connector.*
+_Use a multimeter to check the voltage and polarity of the original socket's connector._
 
 ![Solder your new wiring harness to the original connector wires maintaining
 polarity](/blog/clarity_chargers/resources/IMG_3321.jpeg)
-*Solder your new wiring harness to the original connector wires maintaining polarity*
+_Solder your new wiring harness to the original connector wires maintaining polarity_
 
 ![Connect your new wiring harness to new USB-C chargers and check panel fit.](/blog/clarity_chargers/resources/IMG_3322.jpeg)
-*Connect your new wiring harness to new USB-C chargers and check panel fit.*
+_Connect your new wiring harness to new USB-C chargers and check panel fit._
 
 ![The back of the panel with all sockets wired up. And antenna tied to inner
 bracket](/blog/clarity_chargers/resources/IMG_3323.jpeg)
-*The back of the panel with all sockets wired up. And antenna tied to inner bracket*
+_The back of the panel with all sockets wired up. And antenna tied to inner bracket_
 
 ![Front chargers ready](/blog/clarity_chargers/resources/IMG_3324.jpeg)
-*Front chargers ready*
+_Front chargers ready_
 
 ## Part 2: Rear Console Installation
 
@@ -142,7 +142,7 @@ source from the rear 12V outlet.
 The rear panel is very easy to remove—just pull it toward you firmly.
 
 ![Rear pannel with air outlets removed, view on inside air ducts](/blog/clarity_chargers/resources/IMG_3327.jpeg)
-*Rear pannel with air outlets removed, view on inside air ducts*
+_Rear pannel with air outlets removed, view on inside air ducts_
 
 ### 2. Drilling and Rear chargers Installation
 
@@ -156,29 +156,29 @@ around the intended installation site—on either side of the standard
 cigarette lighter socket.*
 
 ![Finally, they got in.](/blog/clarity_chargers/resources/IMG_3329.jpeg)
-*Finally, they got in.*
+_Finally, they got in._
 
 ![Checking how they fit](/blog/clarity_chargers/resources/IMG_3330.jpeg)
-*Checking how they fit*
+_Checking how they fit_
 
 ### 3. Wiring and assembling
 
 We do the rear wiring (Y-connector) in the same way as the front wiring.
 
 ![Then connect it to original socket's connector wires.](/blog/clarity_chargers/resources/IMG_3331.jpeg)
-*Then connect it to original socket's connector wires.*
+_Then connect it to original socket's connector wires._
 
 ![Solder firmly](/blog/clarity_chargers/resources/IMG_3332.jpeg)
-*Solder firmly*
+_Solder firmly_
 
 ![And wrap all additional harness in fabric tape](/blog/clarity_chargers/resources/IMG_3332.jpeg)
-*And wrap all additional harness in fabric tape*
+_And wrap all additional harness in fabric tape_
 
 Now, simply reverse the disassembly process.
 Just carefully snap the console panel back into place.
 
 ![Final result of rear panel with chargers and cables plugged in.](/blog/clarity_chargers/resources/IMG_3335.jpeg)
-*Final result of rear panel with chargers and cables plugged in.*
+_Final result of rear panel with chargers and cables plugged in._
 
 Enjoy your new, modern charging setup!
 
