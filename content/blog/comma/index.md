@@ -68,8 +68,8 @@ more. Below, I outline the advantages compared to stock or my assumptions about 
 5. **Traffic jam behavior:** No "Stopped" message requiring you to press buttons
    or gas. The car waits as long as needed in traffic and moves when the car ahead
    moves, with no timeout that I've noticed.
-6. **Driver monitoring:** If you fall asleep, the system beeps and gently brakes,
-   disabling cruise control.
+6. **Driver monitoring:** If you fall asleep, the system beeps and brakes till
+   completely stop, disabling cruise control.
 7. **Phone usage detection:** It detects when you use your phone and alerts you.
 8. **Speed reduction on curves:** After some calibration, it can reduce speed
    based on map or visual data for sharp turns. Not always perfectly early, but on
