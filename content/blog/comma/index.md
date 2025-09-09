@@ -58,13 +58,16 @@ more. Below, I outline the advantages compared to stock or my assumptions about 
    wheel; the system understands you want to change lanes and does so smoothly.
    Note: Since there are no blind spot sensors, you still need to watch your
    surroundings.
+   Note: Some forks have the option for nudgeless lane changes, where you can
+   change lanes just by initiating the turn signal.
 3. **Offline OSM maps:** The system loads offline OpenStreetMap data and knows
    speed limits by location — cities, villages, and so on. It automatically
    adjusts speed limits on cruise, slowing down when entering towns even if no
    cars are ahead.
 4. **Advanced distance sensitivity:** It keeps a safe distance, not tailgating
    until radar triggers braking. It detects cars far ahead and slows down
-   proactively.
+   proactively. Some forks will allow you to customize the distance with profiles
+   tied to the distance bars in the Clarity
 5. **Traffic jam behavior:** No "Stopped" message requiring you to press buttons
    or gas. The car waits as long as needed in traffic and moves when the car ahead
    moves, with no timeout that I've noticed.
@@ -153,7 +156,8 @@ _Comma with proxy board and harness_
 17. Cut some part of base to make type-c cable free out
     ![TypeC out](/blog/comma/resources/IMG_3869.jpeg)
     _Type-C out_
-18. Make cut-out in Camera cover
+18. _Optional_ Make cut-out in Camera cover (you can try to snap on the camera
+    cover without cutting out.)
     ![Camera cover cut-out](/blog/comma/resources/IMG_3870.jpeg)
     _Camera cover cut-out_
 19. Link the Harness Box to the Comma device via the Type-C cable.
@@ -185,6 +189,9 @@ _Comma with proxy board and harness_
     not need to use the **Main** button; typically it is enough to press the
     LKAS button once per drive, after which OpenPilot will manage it
     automatically when ACC is on.
+    Note: The LKAS automatic activation when ACC is activated or turned on
+    MADS autosteer immediately when you started driving even if you had
+    not turned on ACC is actually bug that fixed in newer versions of Sunnypilot.
 28. Enjoy your enhanced driving experience!
 
 ![Sunset Comma view](/blog/comma/resources/IMG_3878.jpeg)
