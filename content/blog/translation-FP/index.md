@@ -131,7 +131,7 @@ Then vibe-coded a `translateAlert()` function that:
 
 This way, even dynamic messages are properly localized.
 
->Example: Integrating Dynamic Alert Translation
+> Example: Integrating Dynamic Alert Translation
 
 Dynamic alerts are generated at runtime, often containing parameters such as
 percentages or speed values.
