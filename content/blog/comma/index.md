@@ -12,7 +12,7 @@ description:
 
 ## Introduction
 
-![Sunset Comma view](/blog/comma/resources/IMG_3878_wide.jpg)
+![Sunset Comma view](resources/IMG_3878_wide.jpg)
 
 From the moment I bought my car, the windshield had been damaged, and it was
 replaced during the 0th service. Unfortunately, this caused the camera calibration
@@ -101,8 +101,8 @@ is better.
 - [Proxy Board](https://shop.retropilot.org/product/honda-clarity-proxy-board-kit/)
   to insert into the CAN gateway; sold with wiring (harness) for Honda Clarity
 
-![Comma in box vertical](/blog/comma/resources/IMG_3846.jpeg)
-![Comma in box horizontal](/blog/comma/resources/IMG_3847.jpeg)
+![Comma in box vertical](resources/IMG_3846.jpeg)
+![Comma in box horizontal](resources/IMG_3847.jpeg)
 _Comma with proxy board and harness_
 
 ### Tools required
@@ -123,20 +123,20 @@ _Comma with proxy board and harness_
    - Two screws underneath the glove box
    - Three screws on top of the glove box
 6. Locate the CAN gateway behind the infotainment screen:
-   ![Place of can gateway](/blog/comma/resources/IMG_3853.jpeg)
+   ![Place of can gateway](resources/IMG_3853.jpeg)
    _CAN gateway behind this panel_
 7. Proxy board connects behind CAN gateway. Orientation does not matter it is
    not polarized.
-   ![Can gateway and proxy board](/blog/comma/resources/IMG_3852.jpeg)
+   ![Can gateway and proxy board](resources/IMG_3852.jpeg)
    _Proxy board connected_
 8. After connecting the proxy board, turn on the car and check for errors.
    The light on the proxy board should be on; it is visible through the white plastic.
 9. _Optional_ Wrap Proxy board with fabric tape.
-   ![Proxy board wraped with tape](/blog/comma/resources/IMG_3855.jpeg)
+   ![Proxy board wraped with tape](resources/IMG_3855.jpeg)
    _Proxy board wrapped_
 10. Zip tie proxy board to free ear of the bracket near the gateway
-    ![Proxy board zip tied](/blog/comma/resources/IMG_3856.jpeg)
-    ![Place of zip tie](/blog/comma/resources/IMG_3857.jpeg)
+    ![Proxy board zip tied](resources/IMG_3856.jpeg)
+    ![Place of zip tie](resources/IMG_3857.jpeg)
     _Where zip tie goes_
 11. Before assembling the trim, check again for errors by turning on the car.
 12. Remove the camera cover — it comes off by sliding it upwards toward the
@@ -147,25 +147,25 @@ _Comma with proxy board and harness_
     pry and pull it off.
 15. Connect the Comma harness to the camera wiring (connectors are different
     male/female, so no mix-up).  
-    ![Comma with harness](/blog/comma/resources/IMG_3851.jpeg)
+    ![Comma with harness](resources/IMG_3851.jpeg)
     _Comma with harness_
 16. Connect the Harness Box to the harness wiring. Wrap the harness if you wish
-    ![Camera harness](/blog/comma/resources/IMG_3867.jpeg)
-    ![Camera harness wrapped](/blog/comma/resources/IMG_3868.jpeg)
+    ![Camera harness](resources/IMG_3867.jpeg)
+    ![Camera harness wrapped](resources/IMG_3868.jpeg)
     _Camera harness wrapped, harness box is under the harness_
 17. Cut some part of base to make type-c cable free out
-    ![TypeC out](/blog/comma/resources/IMG_3869.jpeg)
+    ![TypeC out](resources/IMG_3869.jpeg)
     _Type-C out_
 18. _Optional_ Make cut-out in Camera cover (you can try to snap on the camera
     cover without cutting out.)
-    ![Camera cover cut-out](/blog/comma/resources/IMG_3870.jpeg)
+    ![Camera cover cut-out](resources/IMG_3870.jpeg)
     _Camera cover cut-out_
 19. Link the Harness Box to the Comma device via the Type-C cable.
 20. Mount the Comma device in the center of the windshield as high as possible,
     considering you will need to remove it upward and the camera housing might
     interfere.  
-    ![General view](/blog/comma/resources/IMG_3872.jpeg)
-    ![General view 2](/blog/comma/resources/IMG_3873.jpeg)
+    ![General view](resources/IMG_3872.jpeg)
+    ![General view 2](resources/IMG_3873.jpeg)
     _Eventually you should get something like this_
 21. Not need to connect the Proxy Board to the Harness Box — they communicate
     over CAN.
@@ -194,7 +194,7 @@ _Comma with proxy board and harness_
     not turned on ACC is actually bug that fixed in newer versions of Sunnypilot.
 28. Enjoy your enhanced driving experience!
 
-![Sunset Comma view](/blog/comma/resources/IMG_3878.jpeg)
+![Sunset Comma view](resources/IMG_3878.jpeg)
 
 ## Additional Notes
 
