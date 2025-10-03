@@ -12,7 +12,7 @@ driving assist projects.
 This post summarizes the process, challenges, and solutions implemented —
 especially around **Qt translations** and handling **dynamic alerts**.
 
-![translation demo](/blog/translation-FP/resources/IMG_4254.jpeg) ![translation demo](/blog/translation-FP/resources/IMG_4255.jpeg) 
+![translation demo](/blog/translation-FP/resources/IMG_4254.jpeg) ![translation demo](/blog/translation-FP/resources/IMG_4255.jpeg)
 
 ## Background
 
