@@ -13,7 +13,7 @@ The logs are collected from a Kubernetes cluster where Falco is deployed via
 Helm, forwarded to a Wazuh host over UDP, and processed by Wazuh decoders and
 rules to generate alerts.
 
-### Pipeline Diagram
+## Pipeline Diagram
 
 ```bash
 +-----------------------------+
