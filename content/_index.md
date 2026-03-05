@@ -47,6 +47,18 @@ _Odesa National University_ - Master of Science - Computer Networks and Systems
 
 ## EXPERIENCE
 
+**Site Reliability Engineer** - Trimble Inc.  
+May 2025 – Now
+
+- Delivered cross-platform infrastructure support across hybrid environments (Windows & Linux)
+  spanning on-prem and multiple cloud providers (AWS, Azure).
+- Monitored and triaged production systems using a combination of Grafana, Prometheus, CloudWatch, and proprietary tools.
+- Handled incident response, RCA documentation, and on-call rotations to maintain high system reliability and uptime.
+- Automated routine tasks and diagnostics using PowerShell, Bash, and Python scripts to reduce MTTR and operator toil.
+- Developed and maintained internal knowledge base and runbooks to standardize troubleshooting processes across
+  global SRE teams.
+- Provided internal consultancy and support for complex CI/CD pipelines, promoting reliability in development lifecycles.
+
 **Site Reliability Engineer** - NuxGame  
 Mar 2025 – May 2025
 
