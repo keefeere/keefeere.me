@@ -43,3 +43,6 @@ PHEV
 TESA
 OpenPilot
 sunnypilot
+LaserJet
+AirPrint
+container‑based
